@@ -1,3 +1,4 @@
+ # O(E * logV)
 def dijkstra_algorithm(graph, start_node):
     shortest_path = {}
     previous_nodes = {}
