@@ -33,7 +33,7 @@
   - [x] Solve over 100
   - [ ] Solve over 500
   - [ ] Solve over 1000
-  - [ ] Compete in cp competition
+  - [x] Compete in cp competition
   - [x] Master easy problems
   - [ ] Master medium problems
   - [ ] Master hard problems
