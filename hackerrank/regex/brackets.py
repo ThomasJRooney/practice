@@ -1,4 +1,4 @@
-Regex_Pattern = r"\S{2}\s\S{2}\s\S{2}"
+Regex_Pattern = r'^[a-zA-Z02468]{40}[13579\s]{5}$'
 
 import re
 
