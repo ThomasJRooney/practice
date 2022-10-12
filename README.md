@@ -2,7 +2,8 @@
 
 # Goals:
 - [ ] Hackerrank
-  - [x] Gold Level Python
+  - [x] Gold Level Python]
+  - [ ] Gold Level Algorithms/Problem Solving
   - [ ] Gold Level Java
   - [ ] Gold Level C
   - [ ] Gold Level C++
