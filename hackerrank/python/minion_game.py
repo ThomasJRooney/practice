@@ -7,7 +7,10 @@ def minion_game(string):
             kevin += 1
         else:
             stuart += 1
-    print("Stuart " + str(stuart) if stuart > kevin else "Kevin " + str(kevin))
+    if stuart == kevin:
+        print("Draw")
+    else:
+        print("Stuart " + str(stuart) if stuart > kevin else "Kevin " + str(kevin))
 
 if __name__ == '__main__':
     s = input()
