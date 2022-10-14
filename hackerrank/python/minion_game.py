@@ -1,16 +1,18 @@
 def minion_game(string):
-    stuart, kevin = 0, 0
-    vowels = "aeiouAEIOU"
-    subs = [string[i:j] for i in range(len(string)) for j in range(i + 1, len(string) + 1)]
-    for ss in subs:
-        if ss[0] in vowels:
-            kevin += 1
-        else:
-            stuart += 1
-    if stuart == kevin:
-        print("Draw")
+    l, kevin, stuart = len(string), 0, 0
+    for i in range(l):
+        if string[i] in "AEIOU":
+            kevin += l - i    
+    if l % 2 == 0:    
+        stuart = ((l+1)*l//2) - kevin
     else:
-        print("Stuart " + str(stuart) if stuart > kevin else "Kevin " + str(kevin))
+        stuart = ((l+1)*(l//2)+((l+1)/2)) - kevin  
+    if stuart > kevin:
+        print("Stuart {}".format(stuart))
+    elif stuart < kevin:
+        print("Kevin {}".format(kevin))
+    else:
+        print("Draw")
 
 if __name__ == '__main__':
     s = input()
