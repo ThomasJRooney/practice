@@ -1,0 +1,7 @@
+a = input()
+a = set(map(int, input().split()))
+b = input()
+b = set(map(int, input().split()))
+ab = list(a.difference(b)) + list(b.difference(a))
+ab.sort()
+print(i for i in ab)
