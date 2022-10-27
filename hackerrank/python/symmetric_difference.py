@@ -4,4 +4,5 @@ b = input()
 b = set(map(int, input().split()))
 ab = list(a.difference(b)) + list(b.difference(a))
 ab.sort()
-print(i for i in ab)
+for i in ab:
+    print(i)
