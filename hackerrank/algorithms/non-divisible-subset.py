@@ -16,24 +16,22 @@ from itertools import combinations
 #
 
 def nonDivisibleSubset(k, s):
-    combos = []
-    ret = 0
-    for i in range(2, len(s)):
-        for combo in list(combinations(s, i)):
-            combos.append(combo)
-    for combo in combos:
-        b = True
-        for i in range(len(combo)):
-            for j in range(i, len(combo)):
-                if (combo[i] + combo[j]) % k == 0:
-                    b = False
-        if b:
-            ret = max(ret, len(combo))
-    return ret
-
-
-    print(combos)
-
+    res = {i: 0 for i in range(k)}
+    for i in s:
+        res[i % k] += 1
+    if res[0] > 1:
+        res[0] = 1
+    if k % 2 == 0 and res[ k // 2] > 1:
+        res[k // 2] = 1
+    for i in range(1, int(math.ceil(k / 2))):
+        if res[i] == 0 or res[k - i] == 0:
+            pass
+        elif res[i] < res[k - i]:
+            res[i] = 0
+        else:
+            res[k - i] = 0
+    return sum(res.values())
+                    
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
