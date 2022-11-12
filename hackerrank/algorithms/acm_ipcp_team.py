@@ -6,7 +6,7 @@ import random
 import re
 import sys
 from itertools import combinations
-
+from collections import defaultdict
 #
 # Complete the 'acmTeam' function below.
 #
@@ -15,20 +15,15 @@ from itertools import combinations
 #
 
 def acmTeam(topic):
-    teams = list(combinations(topic, 2))
-    m_team = 0
-    m_topics = 0
-    cur_team = 1
-    for p1, p2 in teams:
-        t = 0
-        for i in range(len(topic[0])):
-            if p1[i] == '1' or p2[i] == '1':
-                t += 1
-        if t > m_topics:
-            m_topics = t
-            m_team = cur_team
-        cur_team += 1
-    return([m_topics, m_team])
+    m = len(topic[0])
+    idx = list(range(1, len(topic) + 1))
+    teams = combinations(idx, 2)
+    d = defaultdict(lambda: 0)
+    for team in teams:
+        subject = bin(int(topic[team[0] - 1], 2) | int(topic[team[1] - 1], 2))[2:]
+        subject = subject.zfill(m)
+        d[subject.count("1")] += 1
+    return [max(d.keys()), d[max(d.keys())]]
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
