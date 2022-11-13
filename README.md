@@ -2,12 +2,12 @@
 
 # Goals:
 - [ ] Hackerrank
-  - [x] Gold Level Python]
-  - [ ] Gold Level Algorithms/Problem Solving
+  - [x] Gold Level Python
+  - [x] Gold Level Algorithms/Problem Solving
+  - [ ] Gold Level SQL
   - [ ] Gold Level Java
   - [ ] Gold Level C
   - [ ] Gold Level C++
-  - [ ] Gold Level SQL
   - [ ] Gold Level Ruby
 - [ ] Code Chef
   - [ ] Compete in competition
