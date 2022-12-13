@@ -1,6 +1,12 @@
 # Daily Practice Log
 
-# Goals:
+# 2023 Goals
+- [ ] 365 days of Code -> Push code to Github Everyday
+- [ ] Max out Hackerrank Stats
+- [ ] Compete in weekly Leetcode CP contests
+- [ ] Master Django -> Create LifeBase Metric App with Django
+
+# Long Term Goals:
 - [ ] Hackerrank
   - [x] Gold Level Python
   - [x] Gold Level Algorithms/Problem Solving
