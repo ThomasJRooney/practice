@@ -3,7 +3,7 @@
 # 2023 Goals
 - [ ] 365 days of Code -> Push code to Github Everyday
 - [ ] Max out Hackerrank Stats
-- [ ] Compete in weekly Leetcode CP contests
+- [ ] Compete in 20-30 weekly Leetcode CP contests
 - [ ] Master Django -> Create LifeBase Metric App with Django
 
 # Long Term Goals:
