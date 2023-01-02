@@ -2,15 +2,14 @@
 
 # 2023 Goals
 - [ ] 365 days of Code -> Push code to Github Everyday
-- [ ] Max out Hackerrank Stats
-- [ ] Compete in 20-30 weekly Leetcode CP contests
-- [ ] Master Django -> Create LifeBase Metric App with Django
+- [ ] Max out Hackerrank Stats (all gold level)
+- [ ] Master Django
 
 # Long Term Goals:
 - [ ] Hackerrank
   - [x] Gold Level Python
   - [x] Gold Level Algorithms/Problem Solving
-  - [ ] Gold Level SQL
+  - [x] Gold Level SQL
   - [ ] Gold Level Java
   - [ ] Gold Level C
   - [ ] Gold Level C++
@@ -38,6 +37,7 @@
   - [ ] Legendary Grandmaster - Red level
 - [ ] LeetCode
   - [x] Solve over 100
+  - [ ] Solve over 250
   - [ ] Solve over 500
   - [ ] Solve over 1000
   - [x] Compete in cp competition
