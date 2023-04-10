@@ -8,4 +8,4 @@ class Solution:
                 if not stack: return False
                 if match[stack[-1]] == char: stack.pop()
                 else: return False
-        return not stack
+        return not stack 
