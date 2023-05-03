@@ -7,3 +7,7 @@ class Solution:
         for n in nums2:
             if n not in nums1: ans[1].append(n)
         return ans
+
+class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+        return [list(set(nums1) - set(nums2)), list(set(nums2) - set(nums1))]
