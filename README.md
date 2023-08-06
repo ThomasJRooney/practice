@@ -1,4 +1,4 @@
-# Daily Practice Log
+# Repo for Documenting Any Programming Practice
 
 # Programming Milestones:
 - [ ] Hackerrank
