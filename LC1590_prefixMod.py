@@ -1,0 +1,22 @@
+class Solution(object):
+    def minSubarray(self, nums, p):
+        totalSum = sum(nums)
+        rem = totalSum % p
+        if rem == 0:
+            return 0
+        
+        prefixMod = {0: -1}
+        prefixSum = 0
+        minLength = len(nums)
+
+        for i, num in enumerate(nums):
+            prefixSum += num
+            currentMod = prefixSum % p
+            targetMod = (currentMod - rem + p) % p
+
+            if targetMod in prefixMod:
+                minLength = min(minLength, i - prefixMod[targetMod])
+
+            prefixMod[currentMod] = i
+
+        return minLength if minLength < len(nums) else -1
